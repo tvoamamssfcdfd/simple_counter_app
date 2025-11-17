@@ -15,8 +15,7 @@ btnDec.addEventListener("click", () => {
     counterDisplay.textContent = count;
 });
 
-// ❌ БАГ: кнопка Reset не скидає лічильник
 btnReset.addEventListener("click", () => {
-    counterDisplay.textContent = 0; 
-    // BUG: count не оновлюється, тому лічильник "ламається"
+    count = 0;
+    counterDisplay.textContent = count;
 });
